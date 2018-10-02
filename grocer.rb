@@ -1,9 +1,19 @@
 def consolidate_cart(cart)
-  # code here
+  consolidated = {}
+  cart.each do |item|
+    item.each do |name, stats|
+      consolidated[name] ||= stats
+      consolidated[name][:count] ? consolidated[name][:count] += 1 : consolidated[name][:count] = 1
+    end
+  end
+  consolidated
 end
 
 def apply_coupons(cart, coupons)
-  # code here
+  coupons.each do |coupon|
+    coupon_name = coupon[:item]
+    if cart[coupon_name] &&  
+  end
 end
 
 def apply_clearance(cart)
