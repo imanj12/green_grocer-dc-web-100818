@@ -9,12 +9,12 @@ def consolidate_cart(cart)
   consolidated
 end
 
-#def apply_coupons(cart, coupons)
-#  coupons.each do |coupon|
-#    coupon_name = coupon[:item]
-#    if cart[coupon_name] && cart[coupon_name][:count] 
-#  end
-#end
+def apply_coupons(cart, coupons)
+  coupons.each do |coupon|
+    coupon_name = coupon[:item]
+    if cart[coupon_name] && cart[coupon_name][:count] 
+  end
+end
 
 def apply_clearance(cart)
   # code here
