@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  # code here
+  cart.each do ||
 end
 
 def checkout(cart, coupons)
