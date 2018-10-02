@@ -13,7 +13,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     coupon_name = coupon[:item]
     if defined? cart[coupon_name] && cart[coupon_name][:count] >= coupon[:num]
-      if cart["#{coupon_name} W/COUPON"]
+      if defined? cart["#{coupon_name} W/COUPON"]
         cart["#{coupon_name} W/COUPON"][:count] += 1
       else
         cart["#{coupon_name} W/COUPON"] = {:count => 1, :price => coupon[:cost]}
