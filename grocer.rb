@@ -37,6 +37,6 @@ end
 
 def checkout(cart, coupons)
   consolidated = consolidate_cart(cart)
-  
+  consolidated_couponed = apply_coupons
   
 end
