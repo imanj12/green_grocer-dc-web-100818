@@ -30,6 +30,7 @@ def apply_clearance(cart)
     if details[:clearance] == true
       
   end
+  cart
 end
 
 def checkout(cart, coupons)
