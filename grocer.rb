@@ -41,6 +41,7 @@ def checkout(cart, coupons)
   discounted = apply_clearance(couponed)
   
   cart_total = 0
-  discounted.each do ||
+  discounted.each do |item, details|
+    
   
 end
