@@ -47,7 +47,7 @@ def checkout(cart, coupons)
   end
   
   if cart_total > 100
-    
+    new_cart_total = cart_total 
   end
   
 end
